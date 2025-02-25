@@ -20,6 +20,7 @@ const Main: React.FC = () => {
   const [suffix, setSuffix] = useState(0);
   const [results, setResults] = useState<string[]>([]);
   const [isLoading, setLoading] = useState(false);
+
   const [isLoadingMore, setLoadingMore] = useState(true);
 
   const [api, contextHolder] = notification.useNotification();
