@@ -70,7 +70,7 @@ const Main: React.FC = () => {
     if (subNumber.length === maxLength) return subNumber;
     if (resultList.length === size) return "";
 
-    for (let i = 1; i <= 9; i++) {
+    for (let i = 0; i <= 9; i++) {
       subNumber += i;
       let result = backtrack(maxLength, subNumber, resultList, size);
       result = prefix + result + suffix;
